@@ -6,13 +6,14 @@
   "scripts": {
     "prepare": "husky install",
     "start": "npm run dev",
-    "dev": "echo \"Error: no dev specified\" && exit 1",
+    "dev": "web-dev-server --node-resolve --watch",
     "format": "prettier --write --ignore-unknown .",
     "validate:html": "html-validate \"**/*.html\"",
     "lint:script": "eslint --fix **/*.{js,cjs,mjs}",
     "lint:style": "stylelint --fix **/*.css"
   },
   "devDependencies": {
+    "@web/dev-server": "^0.1.34",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
