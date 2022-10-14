@@ -1,0 +1,13 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SiteHeader from "@/components/SiteHeader.astro";
+import site from "@/site.json";
+---
+
+<BaseLayout>
+  <SiteHeader>
+    <h1 slot="title">{site.title}</h1>
+  </SiteHeader>
+
+  <p>Hello World!</p>
+</BaseLayout>
